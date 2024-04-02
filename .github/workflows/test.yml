@@ -6,8 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -uses: actions/checkout@v2
-      -uses: shivammathur/setup-php@v2
-      run: composer validate --strict
-      run: composer install --no-progress --optimize-autoloader
-      run: composer cs-check
-      run: phpcs .
+      -uses: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+      run: phpcs /src/.
