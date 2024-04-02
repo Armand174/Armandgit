@@ -4,17 +4,17 @@ jobs:
   demo:
     name: Phpcs
     runs-on: ubuntu-latest
-    # steps:
-    #   -uses: actions/checkout@v2
-    #   - name: Setup PHP
-    #       uses: shivammathur/setup-php@v2
-    #       with:
-    #         php-version: 8.0
+    steps:
+      -uses: actions/checkout@v2
+      - name: Setup PHP
+          uses: shivammathur/setup-php@v2
+          with:
+            php-version: 8.0
 
-    #   - name: Validate composer.json
-    #     run: composer validate --strict
+      - name: Validate composer.json
+        run: composer validate --strict
 
-    #   - name: Install dependencies
+    #  - name: Install dependencies
     #     run: composer install --no-progress --optimize-autoloader
 
     #   - name: Run CS checks
