@@ -1,0 +1,12 @@
+name: Test
+on: [push]
+jobs:
+  phpcs:
+    name: phpcs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: PHP CodeSniffer
+        run: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+      - name: phpcs
+        run: php ./phpcs.phar ./src
