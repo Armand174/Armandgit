@@ -1,6 +1,6 @@
 <?php
 /**
- * Dates and Setup and also date
+ * Dates and Setup and also dates
  * 
  * PHP version 6
  * 
