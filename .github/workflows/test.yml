@@ -5,6 +5,7 @@ jobs:
     name: phpcs
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2
-      -uses: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+      - uses: actions/checkout@v2
+      - name: PHP CodeSniffer
+        uses: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
       run: phpcs /src/.
