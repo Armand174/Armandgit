@@ -7,7 +7,7 @@ jobs:
     steps:
       -uses: actions/checkout@v2
       -uses: shivammathur/setup-php@v2
-      -run: composer validate --strict
-      -run: composer install --no-progress --optimize-autoloader
-      -run: composer cs-check
-      -run: phpcs .
+      run: composer validate --strict
+      run: composer install --no-progress --optimize-autoloader
+      run: composer cs-check
+      run: phpcs .
