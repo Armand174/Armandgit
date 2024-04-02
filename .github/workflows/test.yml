@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      #- name: PHP CodeSniffer
-      #  run: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+      - name: PHP CodeSniffer
+        run: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
       #- name: phpcs
       #  run: phpcs ./src/Dates.php
