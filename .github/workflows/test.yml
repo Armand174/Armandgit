@@ -9,4 +9,4 @@ jobs:
       - name: PHP CodeSniffer
         run: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
       - name: phpcs
-        run: php ./php.phar ./src
+        run: php ./phpcs.phar ./src
