@@ -10,3 +10,7 @@ jobs:
         run: curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
       - name: phpcs
         run: php ./phpcs.phar ./src
+      - name: compo
+        run: composer require phpunit
+      - name: test
+        run: vendor/bin/phpunit tests

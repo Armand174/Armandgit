@@ -1,6 +1,6 @@
 <?php
 /**
- * Dates and Setup and also dates
+ * Dates and Setup
  * 
  * PHP version 6
  * 
@@ -11,7 +11,7 @@
  * @link     localhost
  */
 
-require_once "/src/Dates.php";
+require_once "../src/Dates.php";
 
 $objDate = new \UPJV\Dates();
 echo $objDate->demain();

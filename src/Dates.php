@@ -35,7 +35,7 @@ class Dates
     public function demain()
     {
         $demain = new \DateTime();
-        $demain->add(new \DateInterval(duration:'P10'));
+        $demain->add(new \DateInterval('P1D'));
         $reponse = ['demain' => $demain->format(format:"d-m-Y")];
         return json_encode($reponse);
     }
