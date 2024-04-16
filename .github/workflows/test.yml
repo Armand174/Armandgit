@@ -11,6 +11,6 @@ jobs:
       - name: phpcs
         run: php ./phpcs.phar ./src
       - name: compo
-        run: composer require phpunit
+        run: composer require phpunit/phpunit ^10
       - name: test
         run: vendor/bin/phpunit tests
